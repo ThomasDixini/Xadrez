@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoXadrez.Tabuleiro
+namespace ProjetoXadrez.tabuleiro
 {
     internal class Peca
     {
