@@ -12,7 +12,7 @@ namespace ProjetoXadrez
                 {
                     if (tab.pecas[i, j] == null)
                     {
-                        Console.Write("-" + " ");
+                        Console.Write("-");
                     }
                     Console.Write(tab.pecas[i, j] + " ");
                 }

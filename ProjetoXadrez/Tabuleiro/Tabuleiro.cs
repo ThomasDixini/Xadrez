@@ -18,5 +18,11 @@ namespace ProjetoXadrez.tabuleiro
             this.colunas = colunas;
             this.pecas = new Peca[linhas, colunas];
         }
+
+        public void colocarPeca(Peca peca, Posicao posicao)
+        {
+            pecas[posicao.linha, posicao.coluna] = peca;
+            peca.posicao = posicao;
+        }
     }
 }

@@ -13,10 +13,10 @@ namespace ProjetoXadrez.tabuleiro
         public Tabuleiro tabuleiro;
         public int qtdMovimentos;
 
-        public Peca(Cor cor, Posicao posicao, Tabuleiro tabuleiro)
+        public Peca(Tabuleiro tabuleiro, Cor cor)
         {
             this.cor = cor;
-            this.posicao = posicao;
+            this.posicao = null;
             this.tabuleiro = tabuleiro;
             qtdMovimentos = 0;
         }
