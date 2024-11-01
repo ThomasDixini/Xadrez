@@ -20,5 +20,10 @@ namespace ProjetoXadrez.tabuleiro
             this.tabuleiro = tabuleiro;
             qtdMovimentos = 0;
         }
+
+        public void incrementarMovimentos()
+        {
+            qtdMovimentos++;
+        }
     }
 }
