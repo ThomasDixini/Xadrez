@@ -9,7 +9,21 @@ namespace ProjetoXadrez
         {
             PartidaDeXadrez partida = new PartidaDeXadrez();
 
-            Tela.ImprimeTabuleiro(partida.tab);
+            
+
+            while(!partida.terminada)
+            {
+                Console.Clear();
+                Tela.ImprimeTabuleiro(partida.tab);
+
+                Console.Write("Origem: ");
+                Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
+
+                Console.Write("Destino: ");
+                Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
+
+                partida.executaMovimento(origem, destino);
+            }
         }
     }
 }
